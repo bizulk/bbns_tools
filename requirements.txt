@@ -1,0 +1,9 @@
+google-api-python-client 
+google-auth-httplib2 
+google-auth-oauthlib
+email
+base64
+apiclient
+mimetypes
+pyexcel-ods
+pyexcel-xlsx

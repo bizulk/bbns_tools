@@ -6,7 +6,7 @@ On utilise un compte gmail pour les envois (credentials à récuperer et token �
 
 # Infos techniques
 
-## Utiliser l'API Python de Google pour Gmail : 
+## Installer et Utiliser l'API Python de Google pour Gmail : 
  - HOWTO  ouvrir une session avec l'API [ici](https://developers.google.com/gmail/api/quickstart/python). Il faut télécharger les credentials.
  - HOWTO envoyer un mail [ici](https://developers.google.com/gmail/api/guides/sending)
 

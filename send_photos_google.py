@@ -219,12 +219,16 @@ def main():
 
     service = build("gmail", "v1", http=creds.authorize(Http()))
 
+    # Afficher un rappel si l'on est en mode simulation
+    if DONT_SEND_MAIL is True:
+        print("La simulation est activée, les mails ne seront pas envoyés")
+        
     # Creation du message pour chaque 'cliché' et envoi au parent
     liste = parse_file(FILE_INPUT)
     for idx, item in enumerate(liste):
         addr = item[0]
         photo = item[1]
-        print("{2} - Envoi à {0} la photo {1} - ".format(addr, photo, idx + 1), end="")
+        print("{2} - Envoi à {0} la photo {1} - \n".format(addr, photo, idx + 1), end="")
         filepath=PHOTO_PATH + '\\' + photo
         if Path(filepath).is_file():
             if DONT_SEND_MAIL is True:
